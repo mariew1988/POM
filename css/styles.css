@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Kaushan+Script&family=Tangerine:wght@400;700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  /*   font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Tangerine", cursive;
+  font-size: 2rem;
+  background-color: orange;
+}
+
+h1 {
+  font-family: "Kaushan Script", cursive;
+  color: #8c243e;
+  font-weight: bold;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+h3 {
+  font-family: "Kaushan Script", cursive;
+  color: #8c243e;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p:hover {
+  color: #507adc;
+  text-decoration: none;
+}
+
+li {
+  background-color: #8b3eff;
+}
+
+li:hover {
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media (max-width: 550px) {
+  header {
+    justify-content: center;
+  }
+  nav ul {
+    justify-content: center;
+  }
+}
+
+#back-to-top {
+  border: solid 0rem #8c243e;
+  padding: 1px;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+@media (min-width: 550px) {
+  .child {
+    flex-basis: calc((100% - 1rem) / 2);
+    border: 2px solid #af3702;
+    background-color: pink;
+    flex: 0 0 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  .child {
+    flex-basis: calc((100% - 1rem) / 2);
+    border: 2px solid #af3702;
+    background-color: #ffe8de;
+    flex: 0 0 100%;
+  }
+}
